@@ -195,8 +195,73 @@ const Company = "MVC";
 // 04 Amelia
 // 05 Sophia
 
-const CompanyMessage = (name) => {
-  console.log(`Hello, ${name} Welcome to the ${Company} Company team!`);
+const CompanyEmployees = ["Liam", "Noah", "Oliver", "James", "Elijah"];
+
+const CompanyMessage = () => {
+  (console.log(
+    `Hello, ${CompanyEmployees[1]} Welcome to the ${Company} Company team!`,
+  ),
+    console.log(
+      `Hello, ${CompanyEmployees[2]} Welcome to the ${Company} Company team!`,
+    ),
+    console.log(
+      `Hello, ${CompanyEmployees[3]} Welcome to the ${Company} Company team!`,
+    ),
+    console.log(
+      `Hello, ${CompanyEmployees[4]} Welcome to the ${Company} Company team!`,
+    ));
 };
 
-CompanyMessage("Liam");
+CompanyMessage();
+
+// new lets create a function inside a function
+
+const CompanyID = [
+  { ID01: "MVX" },
+  { ID02: "DXS" },
+  { ID03: "Random" },
+  { ID04: "MVC" },
+  { ID05: "DSX" },
+];
+
+// ================== NOTE =====================
+// so here i have a problem  because a a programmme run like this Hello, Liam Welcome to the MVC Company team!
+// the ID HX is undefined
+
+// 01=> so me i want just the  this objects i have muldtbule key and values and i want to console a key or  a value of tha key index one
+// console.log(`the ID HX is ${CompanyID}`);
+// 02 so to fixe it we have to
+// can easily convert the keys or values into an array to grab the element at index 1
+
+// Here is how you do it using Object.keys() and Object.values().
+
+// ===================================
+
+const allValues = CompanyID.map((obj) => Object.values(obj)[0]);
+// console.log(allValues);
+
+const allKeys = CompanyID.map((obj) => Object.keys(obj)[0]);
+// console.log(allKeys[0]);
+
+const calculatrice = (num1, num2) => {
+  const results = num1 * num2;
+  let finalString = String(results);
+  (console.log(
+    `Please ${CompanyEmployees[1]} provide a 2-digit number to create your ID `,
+  ),
+    console.log(
+      `Please ${CompanyEmployees[2]} provide a 2-digit number to create your ID `,
+    ),
+    console.log(
+      `Please ${CompanyEmployees[3]} provide a 2-digit number to create your ID `,
+    ),
+    console.log(
+      `Please ${CompanyEmployees[4]} provide a 2-digit number to create your ID `,
+    ),
+    console.log(`${CompanyEmployees[1]} ID : ${finalString + allValues[1]}`));
+  console.log(`${CompanyEmployees[2]} ID : ${finalString + allValues[2]}`);
+  console.log(`${CompanyEmployees[3]} ID : ${finalString + allValues[3]}`);
+  console.log(`${CompanyEmployees[4]} ID : ${finalString + allValues[4]}`);
+};
+
+calculatrice(2, 24);
