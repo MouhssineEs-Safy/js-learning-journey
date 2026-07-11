@@ -113,11 +113,14 @@ console.log(message);*/
 // Multiplication
 // // Division
 
-const calculatrice01 = (num1, num2) => {
-  console.log(num1 + num2);
-  // console.log(num1 - num2)
-  // console.log(num1 * num2)
-  // console.log(num1 % num2)
-};
+// const calculatrice01 = (num1, num2) => {
+//   console.log(num1 + num2);
+//   // console.log(num1 - num2)
+//   // console.log(num1 * num2)
+//   // console.log(num1 % num2)
+// };
 
-calculatrice01(13, 42);
+// calculatrice01(13, 42);
+
+// sorry i dont konw how to take a for expm i want to add option like the user put insiede a input like {*} to told to progeamm if user put the (* i want you to num1*num2)
+// i dont konw how to do it
