@@ -268,157 +268,228 @@ const { text } = require("express");
 
 // calculatrice(2, 24);
 
-// ====================================
+// // ====================================
 
-//              day5
+// //              day5
 
-// ====================================
+// // ====================================
 
-// function type
+// // function type
 
-// on a function we have tow type
-// Type 1: The "Doer" (Actions / console.log)
+// // on a function we have tow type
+// // Type 1: The "Doer" (Actions / console.log)
 
-function SayHello() {
-  console.log("Hello, world!");
-}
+// function SayHello() {
+//   console.log("Hello, world!");
+// }
 
-sayHello(); // Out: Hello, world!
+// sayHello(); // Out: Hello, world!
 
-// // Type 2: The "Giver" (The return Statement)
-// // This type of function processes data and hands a value back
+// // // Type 2: The "Giver" (The return Statement)
+// // // This type of function processes data and hands a value back
 
-function AddNumbers(a, b) {
-  return a + b;
-}
+// function AddNumbers(a, b) {
+//   return a + b;
+// }
 
-let total = AddNumbers(5, 10);
-// total is now 15
-console.log(total); // Prints 15
+// let total = AddNumbers(5, 10);
+// // total is now 15
+// console.log(total); // Prints 15
 
-// Quick Comparison
+// // Quick Comparison
 
-// Type 1: Just "Doing"
+// // Type 1: Just "Doing"
 
-// Main Goal
-// 1-Show something, modify a webpage, or log data.
+// // Main Goal
+// // 1-Show something, modify a webpage, or log data.
 
-// Output Type
-// Temporary (visible to humans, not the code)
+// // Output Type
+// // Temporary (visible to humans, not the code)
 
-// Analogy
+// // Analogy
 
-// A billboard showing a message.
+// // A billboard showing a message.
 
-// Type 2: Using return
-// Calculate a value and pass it back.
-// Permanent (can be saved into variables).
-// A vending machine dropping a snack into your hand.
-// const CompanyEmployees = ["Liam", "Noah", "Oliver", "James", "Elijah"];
-// CompanyEmployees;
+// // Type 2: Using return
+// // Calculate a value and pass it back.
+// // Permanent (can be saved into variables).
+// // A vending machine dropping a snack into your hand.
+// // const CompanyEmployees = ["Liam", "Noah", "Oliver", "James", "Elijah"];
+// // CompanyEmployees;
 
-const Message = () => {
-  console.log(`${CompanyEmployees[1]} Id :`);
-};
+// const Message = () => {
+//   console.log(`${CompanyEmployees[1]} Id :`);
+// };
 
-const ID = (num1, num2) => {
-  return num1 * num2;
-};
+// const ID = (num1, num2) => {
+//   return num1 * num2;
+// };
 
-Message(ID(32, 31));
+// Message(ID(32, 31));
 
-function Message(chatIA) {
-  //   console.log(`${CompanyEmployees[1]} Id :`);
-  console.log(`${CompanyEmployees[1]} Id : ${chatIA}`);
-}
+// function Message(chatIA) {
+//   //   console.log(`${CompanyEmployees[1]} Id :`);
+//   console.log(`${CompanyEmployees[1]} Id : ${chatIA}`);
+// }
 
-function ID(num1, num2) {
-  let Numbers = num1 * num2;
-  return Numbers;
-}
+// function ID(num1, num2) {
+//   let Numbers = num1 * num2;
+//   return Numbers;
+// }
 
-Message(ID(21, 3));
+// Message(ID(21, 3));
 
-// Message(ID(21, 3)); // This Call Function Nesting
-// and the output calld = Expression
-// Message output call Output
+// // Message(ID(21, 3)); // This Call Function Nesting
+// // and the output calld = Expression
+// // Message output call Output
 
-// ==========================
+// // ==========================
 
-// Operators
-// arithmetic operators
-// assignment operator
-// comparison operators
+// // Operators
+// // arithmetic operators
+// // assignment operator
+// // comparison operators
+// // logical operators
+// // bitwise operators
+
+// // arithmetic operators
+
+// let number1 = 100;
+// let number2 = 50;
+
+// let TOTAL;
+// TOTAL = number1 + number2;
+// console.log(TOTAL); //Expression
+
+// total = number1 * number2;
+// console.log(total); //Expression
+
+// total = number1 - number2;
+// console.log(total); //Expression
+
+// total = number1 / number2;
+// console.log(total); //Expression
+
+// // assignment operator
+// // decrement operator
+
+// // operator increment and decrement
+// // increment
+// // console.log(++total);
+
+// // // decrement
+// console.log(--total);
+
+// let Text = "Hello ";
+
+// // Text = Text + "Mike"; // this call concatenation
+
+// Text += " Jhone ";
+// console.log(Text);
+
+// // assignment operator
+
+// let A = 50;
+
+// A += 5; // assignment
+// console.log(A);
+
+// A -= 5;
+// console.log(A);
+
+// A *= 2;
+// console.log(A);
+
+// A /= 2;
+// console.log(A);
+
+// let B = (A *= 2);
+// console.log(B);
+
+// B += 50;
+// console.log(B);
+
+// // comparison operators
+
+// let c = 5;
+// console.log(c > 1);
+// console.log(c > 10);
+
+// console.log(c < 1);
+// console.log(c < 10);
+
+// console.log(c == 5);
+// console.log(c >= 5);
+
+// ===============================
+// day 6
+// ===============================
+
 // logical operators
-// bitwise operators
+AND;
+OR;
+NOT;
 
-// arithmetic operators
+let age = 17;
+// let type = age > 15 && age < 20; // && => AND
+// let type = age > 15 || age < 20; // || => OR
+let isRed = true;
 
-let number1 = 100;
-let number2 = 50;
+console.log(isRed);
+console.log(!isRed); // ! => NOT
+// console.log(type);
 
-let TOTAL;
-TOTAL = number1 + number2;
-console.log(TOTAL); //Expression
+let x = 5;
 
-total = number1 * number2;
-console.log(total); //Expression
+console.log(x >= 5);
 
-total = number1 - number2;
-console.log(total); //Expression
+// =====
 
-total = number1 / number2;
-console.log(total); //Expression
+// let Q = 1;
+// let Q = 0;
+// let Q = NaN;
 
-// assignment operator
-// decrement operator
+let Q = undefined;
 
-// operator increment and decrement
-// increment
-// console.log(++total);
+// or
+Q = Q || 6;
 
-// // decrement
-console.log(--total);
+let W = 2;
+let Y = Q || W;
 
-let Text = "Hello ";
+// Y => Here, only integers will be accepted
+console.log(Y);
 
-// Text = Text + "Mike"; // this call concatenation
+// Do not accept the Value like
 
-Text += " Jhone ";
-console.log(Text);
+// undefined
+// null
+// 0
+// false
+// ""
+// NaN
 
-// assignment operator
+// 21 The JS has been updated
 
-let A = 50;
+let q = 0;
+let q = false;
 
-A += 5; // assignment
-console.log(A);
+let w = 2;
+let y = q ?? w;
 
-A -= 5;
-console.log(A);
+console.log(y);
 
-A *= 2;
-console.log(A);
+// Here?? I thought 0 was the correct answer.
 
-A /= 2;
-console.log(A);
+// ======
+// The Priority Factor in the Calculation
 
-let B = (A *= 2);
-console.log(B);
+let NumberA = 25 + 5 * 3;
 
-B += 50;
-console.log(B);
+let NumberB = (25 + 5) * 3;
 
-// comparison operators
+// The first operation was performed according to the multiplication rule.
+console.log(NumberA);
 
-let c = 5;
-console.log(c > 1);
-console.log(c > 10);
-
-console.log(c < 1);
-console.log(c < 10);
-
-console.log(c == 5);
-console.log(c >= 5);
-
-// logical operators
+// The second one did the calculation; the first one did the addition.
+console.log(NumberB);

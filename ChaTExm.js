@@ -124,3 +124,38 @@ console.log(message);*/
 
 // sorry i dont konw how to take a for expm i want to add option like the user put insiede a input like {*} to told to progeamm if user put the (* i want you to num1*num2)
 // i dont konw how to do it
+
+// ==========================
+
+const students = [
+  { name: "Liam", age: 20, city: "Casablanca" },
+  { name: "Olivia", age: 22, city: "Rabat" },
+  { name: "Noah", age: 19, city: "Marrakesh" },
+  { name: "Emma", age: 21, city: "Fes" },
+  { name: "Oliver", age: 23, city: "Tangier" },
+];
+console.log(students[1].city);
+
+// Write a function
+
+// multiply(a,b)
+
+// that returns the multiplication.
+
+function multiplication(num1, num2) {
+  const multiply = num1 * num2;
+  return multiply;
+}
+
+console.log(multiplication(50, 5));
+
+// I LOVE A ARRAY Function TO USE IT
+
+const multiplyUser = (num3, num4) => {
+  const processing = num3 * num4;
+  return processing;
+};
+
+console.log(multiplyUser(50, 10));
+
+// ⭐ Total: 30/31
